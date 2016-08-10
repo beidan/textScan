@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/font-awesome.css" />
+		<link rel="stylesheet" href="css/regular.css" />
+		<link rel="stylesheet" href="css/Regist.css" />
+		<link rel="shortcut icon" href="img/logomax.png" type="image/x-icon" />
+		<title>TEXT注册</title>
+	</head>
+
+	<body>
+			<div class="z-container">
+				<!--页头-->
+				<div class="z-header">
+					<img src="img/logomax.png" />
+					<h2>用户注册</h2>
+					<p>已有帐号，</p>
+					<a href="#">直接登录</a>
+				</div>
+				<span class="border-divider"></span>                                                
+				<!--内容-->
+				<div id="z-left-content">
+					<form>
+						<div id="z-PhoneRegist">
+							<label for="z-account" class="z-label">手机/邮箱:</label>
+							<input type="text" id="z-account" class="z-Linput" placeholder="请输入手机/邮箱" maxlength="20" />
+						</div>
+						<div id="z-setPassword">
+							<label for="z-account0" class="z-label">密码:</label>
+							<input type="password" id="z-account0" class="z-Linput" placeholder="请输入4-16位密码" maxlength="16" />
+							<span id="z-progress"><i id="z-Real"></i></span>
+						</div>
+						<div id="z-PasswordConfirm">
+							<label for="z-account1" class="z-label">确认密码:</label>
+							<input type="password" id="z-account1" class="z-Linput" placeholder="请再次输入密码" maxlength="16" />
+						</div>
+						<div id="z-check">
+							<label for="z-account3" class="z-label">验证码:</label>
+							<input type="text" id="z-account3" class="z-Sinput" placeholder="验证码" maxlength="4" />
+							<a href="#" alt="验证码图片"><img src="img/1282800089rltQFw7P.jpg"></a>
+							<a href="#" class="z-change">换一换</a>
+						</div>
+						<input type="submit" value="立即注册" class="z-regist">
+					</form>
+				</div>
+				<!--页脚-->
+				<div id="z-footer">
+					<p>@2015TEXT</p>
+				</div>
+			</div>
+		<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/regist.js"></script>
+	</body>
+
+</html>

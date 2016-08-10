@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/regular.css" />
+		<link rel="stylesheet" href="css/Index.css" />
+		<link rel="stylesheet" href="css/jquery-ui.css" />
+		<link rel="stylesheet" href="css/smallClassify.css" />
+		<link rel="shortcut icon" href="img/logomax.png" type="image/x-icon" />
+		<title>TEXT文档细分</title>
+	</head>
+
+	<body>
+		<div id="z-header">
+			<img src="img/logomax.png" />
+			<div id="z-search">
+				<h1>TEXT在线浏览系统</h1>
+				<form>
+					<input type="text" class="z-main-search" name="key" placeholder="请输入你要搜索的文档名" />
+					<input type="submit" value="搜索" class="z-search-btn" />
+					<ul>
+						<li>
+							<label for="z-all">
+								<input type="radio" name="format" value="all" id="z-all" /> 全部
+							</label>
+						</li>
+						<li>
+							<label for="z-doc">
+								<input type="radio" name="format" value="doc" id="z-doc" /> DOC
+							</label>
+						</li>
+						<li>
+							<label for="z-ppt">
+								<input type="radio" name="format" value="ppt" id="z-ppt" /> PPT
+							</label>
+						</li>
+						<li>
+							<label for="z-txt">
+								<input type="radio" name="format" value="txt" id="z-txt" /> TXT
+							</label>
+						</li>
+						<li>
+							<label for="z-pdf">
+								<input type="radio" name="format" value="pdf" id="z-pdf" /> PDF
+							</label>
+						</li>
+						<li>
+							<label for="z-xls">
+								<input type="radio" name="format" value="xls" id="z-xls" /> XLS
+							</label>
+						</li>
+					</ul>
+				</form>
+			</div>
+			<div id="z-personal">
+				<div class="z-dropDown">
+					<a href="#"><span class="fa fa-question"></span>帮助</a>
+					<ul>
+						<li><a href="#">新手指南</a></li>
+						<li><a href="#">意见反馈</a></li>
+						<li><a href="#">投诉</a></li>
+					</ul>
+				</div>
+
+				<div class="z-dropDown">
+					<a href="#"><span class="fa fa-user"></span>LuckyWinty</a>
+					<ul>
+						<li><a href="#">个人中心</a></li>
+						<li><a href="#">修改信息</a></li>
+						<li><a href="#">退出</a></li>
+					</ul>
+				</div>
+				<div id="z-text-sum">
+					<h3>TEXT文档总数</h3>
+					<ul>
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li>6</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="z-divider">
+			<ul>
+				<li><a href="Index.html">首页</a></li>
+				<li><a href="#">分类</a></li>
+			</ul>
+		</div>
+		<div class="small-classify">
+			<ul class="bread">
+				<li><a href="#">TEXT浏览系统</a></li>
+				<li><a href="#">文档类别</a></li>
+			</ul>
+			<div class="style">
+				<div class="catalogue">
+					<ul class="detail-classify">
+						<li><a href="#tabs-1" class="detail-active">全部<span class="fa fa-smile-o fa-lg" style="color:#2787D2;"></span></a></li>
+						<li><a href="#tabs-2">DOC<span class="fa fa-file-word-o" style="color:#3055C1;"></span></a></li>
+						<li><a href="#tabs-3">PPT<span class="fa fa-file-powerpoint-o" style="color:#FFA324;"></span></a></li>
+						<li><a href="#tabs-4">TXT<span class="fa fa-file-text-o" style="color:#000000;"></span></a></li>
+						<li><a href="#tabs-5">PDF<span class="fa fa-file-pdf-o" style="color:#C30333;"></span></a></li>
+						<li><a href="#tabs-6">XLS<span class="fa fa-file-excel-o" style="color:#2F8D5F;"></span></a></li>
+					</ul>
+					<div class="substance" id="tabs-1">
+						<ul>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-pdf-o"></span>阅读技巧说明</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-pdf-o"></span>小学生优秀作文</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-pdf-o"></span>拼音基本教学</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-pdf-o"></span>笔画规范</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-pdf-o"></span>造句典例</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-pdf-o"></span>选词100题</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-pdf-o"></span>一年级作文</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-pdf-o"></span>把被字句</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-pdf-o"></span>四字成语</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-pdf-o"></span>漫画教学</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="substance" id="tabs-2">
+						<ul>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-word-o"></span>阅读技巧说明</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-word-o"></span>小学生优秀作文</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-word-o"></span>拼音基本教学</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-word-o"></span>笔画规范</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-word-o"></span>造句典例</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-word-o"></span>选词100题</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-word-o"></span>一年级作文</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-word-o"></span>把被字句</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-word-o"></span>四字成语</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-word-o"></span>漫画教学</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="substance" id="tabs-3">
+						<ul>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-powerpoint-o"></span>阅读技巧说明</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-powerpoint-o"></span>小学生优秀作文</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-powerpoint-o"></span>拼音基本教学</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-powerpoint-o"></span>笔画规范</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-powerpoint-o"></span>造句典例</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-powerpoint-o"></span>选词100题</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-powerpoint-o"></span>一年级作文</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-powerpoint-o"></span>把被字句</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-powerpoint-o"></span>四字成语</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-powerpoint-o"></span>漫画教学</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="substance" id="tabs-4">
+						<ul>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-text-o"></span>阅读技巧说明</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-text-o"></span>小学生优秀作文</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-text-o"></span>拼音基本教学</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-text-o"></span>笔画规范</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-text-o"></span>造句典例</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-text-o"></span>选词100题</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-text-o"></span>一年级作文</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-text-o"></span>把被字句</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-text-o"></span>四字成语</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-text-o"></span>漫画教学</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="substance" id="tabs-5">
+						<ul>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-pdf-o"></span>阅读技巧说明</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-pdf-o"></span>小学生优秀作文</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-pdf-o"></span>拼音基本教学</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-pdf-o"></span>笔画规范</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-pdf-o"></span>造句典例</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-pdf-o"></span>选词100题</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-pdf-o"></span>一年级作文</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-pdf-o"></span>把被字句</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-pdf-o"></span>四字成语</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-pdf-o"></span>漫画教学</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="substance" id="tabs-6">
+						<ul>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-excel-o"></span>阅读技巧说明</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-excel-o"></span>小学生优秀作文</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-excel-o"></span>拼音基本教学</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-excel-o"></span>笔画规范</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-excel-o"></span>造句典例</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-excel-o"></span>选词100题</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-excel-o"></span>一年级作文</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-excel-o"></span>把被字句</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-excel-o"></span>四字成语</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a class="media-left" href="#">
+										<img class="media-object" src="img/B.png" alt="...">
+									</a>
+									<div class="media-body">
+										<a class="title" href="#"><span class="fa fa-file-excel-o"></span>漫画教学</a>
+										<p>简介:这本书是小学生学习阅读文章的起步！</p>
+										<ul>
+											<li>上传时间:2015-07-28</li>
+											<li>下载量：12312</li>
+											<li><span class="fa fa-hand-o-up">2345</span></li>
+										</ul>
+									</div>
+									<div class="media-right">
+										<a href="#">下载</a><span class="fa fa-jpy">:3积分</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+			<ul class="pager">
+				<li><a href="#">&laquo;上一页</a></li>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">下一页&raquo;</a></li>
+			</ul>
+		<div id="z-footer">
+			<p>@2015TEXT</p>
+		</div>
+
+		<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.9.2.min.js"></script>
+		<script type="text/javascript" src="js/smallClassify.js"></script>
+	</body>
+
+</html>

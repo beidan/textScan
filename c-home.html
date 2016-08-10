@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>我的个人主页</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="img/logomax.png" type="image/x-icon" />
+
+
+
+		<link rel="stylesheet" href="css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/c-页头.css" />
+
+		<link rel="stylesheet" href="css/regular.css" />
+		<link rel="stylesheet" href="css/Index.css" />
+				<link rel="stylesheet" type="text/css" href="css/c-home.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/jquery.validate-1.13.1.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</head>
+
+	<body>
+		<!--顶部区域-->
+		<div id="z-header">
+			<img src="img/logomax.png" />
+			<div id="z-search">
+				<h1>TEXT在线浏览系统</h1>
+				<form>
+					<input type="text" class="z-main-search" placeholder="请输入你要搜索的文档名" />
+					<input type="submit" value="搜索" class="z-search-btn" />
+					<ul>
+						<li>
+							<label for="z-all">
+								<input type="radio" name="choose-type" id="z-all" /> 全部
+							</label>
+						</li>
+						<li>
+							<label for="z-doc">
+								<input type="radio" name="choose-type" id="z-doc" /> DOC
+							</label>
+						</li>
+						<li>
+							<label for="z-ppt">
+								<input type="radio" name="choose-type" id="z-ppt" /> PPT
+							</label>
+						</li>
+						<li>
+							<label for="z-txt">
+								<input type="radio" name="choose-type" id="z-txt" /> TXT
+							</label>
+						</li>
+						<li>
+							<label for="z-pdf">
+								<input type="radio" name="choose-type" id="z-pdf" /> PDF
+							</label>
+						</li>
+						<li>
+							<label for="z-xls">
+								<input type="radio" name="choose-type" id="z-xls" /> XLS
+							</label>
+						</li>
+					</ul>
+				</form>
+			</div>
+			<div id="z-personal">
+				<div class="z-dropDown">
+					<a href="#"><span class="fa fa-question"></span>帮助</a>
+					<ul>
+						<li><a href="D-help.html">新手指南</a></li>
+						<li><a href="D-help.html">意见反馈</a></li>
+						<li><a href="D-help.html">投诉</a></li>
+					</ul>
+				</div>
+
+				<div class="z-dropDown">
+					<a href="#"><span class="fa fa-user"></span>LuckyWinty</a>
+					<ul>
+						<li><a href="c-home.html">个人中心</a></li>
+						<li><a href="c-home.html">修改信息</a></li>
+						<li><a href="#">退出</a></li>
+					</ul>
+				</div>
+				<div id="z-text-sum">
+					<h3>TEXT文档总数</h3>
+					<ul>
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li>6</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!--顶部区域-->
+		<!--分隔回到首页-->
+		<div id="z-divider">
+			<ul>
+				<li><a href="Index.html">首页</a></li>
+				<li><a href="#">分类</a></li>
+			</ul>
+		</div>
+
+		<!--内容区域-->
+		<div class="container c-bigbox">
+			<div class="row">
+
+				<!--左边导航部分-->
+
+				<div class="col-lg-3">
+					<!--头像昵称部分-->
+					<div class="thumbnail c-ownmsge">
+						<a href="#" class="c-imgshow"><img src="img/woman.png" alt="我的头像" class="img-circle">
+							<div style="display: none;">编辑头像</div>
+						</a>
+
+						<div class="caption">
+							<p><a href="#">天蝎幻想区</a></p>
+							<p>LV1</p>
+							<p>
+								<a href="UploadFile.html" class="c-butown"><span class="fa fa-upload fa-1x"></span>上传我的文档</a>
+							</p>
+						</div>
+					</div>
+					<!--头像昵称部分-->
+				</div>
+				<!--左边导航部分-->
+
+				<!--左边部分我的资产-->
+
+				<div class="col-lg-4 c-left-wealth">
+					<h4>我的资产</h4>
+					<div class="c-wealth-top">
+						<div>
+							<p class="c-wealth-top-img"><span class="badge c-badge"><span class="glyphicon glyphicon-file"></span></span>
+							</p>
+							<p><span>文档数 </span><span> 0</span></p>
+						</div>
+						<div>
+							<p class="c-wealth-top-img"><span class="badge c-badge"><span class="glyphicon glyphicon-yen"></span></span>
+							</p>
+							<p><span>积分值 </span><span> 10</span></p>
+						</div>
+					</div>
+					<h4 class="c-text">最近收益</h4>
+					<div class="c-wealth-bottom">
+						<div class="c-wealth-bottom-1"><span class="glyphicon glyphicon-yen"></span> 积分值<span class="badge c-badge c-threecolor">14</span></div>
+						<div class="c-wealth-bottom-2"><span class="glyphicon glyphicon-eye-open"></span>浏览量<span class="badge c-badge c-threecolor">10</span></div>
+						<div class="c-wealth-bottom-3"><span class="glyphicon glyphicon-download-alt"></span>下载值<span class="badge c-badge c-threecolor">0</span></div>
+					</div>
+
+				</div>
+
+				<!--左边部分我的资产-->
+
+				<!--右边部分-->
+				<div class="col-lg-5 c-border">
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">上传动态</a></li>
+						<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">最近浏览</a></li>
+						<a href="#" class="c-left-more">更多</a>
+					</ul>
+
+					<!--上传动态   此处填充内容-->
+					<div class="tab-content c-noborder">
+						<div role="tabpanel" class="tab-pane fade in active" id="home">
+							<div class="container c-widthflow">
+								<p>
+									<span><img src="img/文档类型1.jpg"></span>
+									<a href="#">旅游指南</a>
+									<span class="c-left">2015-07-03</span>
+								</p>
+								<p>
+									<span><img src="img/文档类型2.jpg"></span>
+									<a href="#">前端成长路线</a>
+									<span class="c-left">2015-06-22</span>
+								</p>
+								<p>
+									<span><img src="img/文档类型3.jpg"></span>
+									<a href="#">前端练习题</a>
+									<span class="c-left">2015-05-20</span>
+								</p>
+
+							</div>
+						</div>
+
+						<!--文档动态-->
+
+						<!--最近浏览-->
+						<div role="tabpanel" class="tab-pane fade" id="profile">
+							<div class="container c-widthflow">
+								<p>
+									<span><img src="img/文档类型1.jpg"></span>
+									<a href="#">汇编综合性实验报告</a>
+									<span class="c-left">2015-07-03</span>
+								</p>
+								<p>
+									<span><img src="img/文档类型2.jpg"></span>
+									<a href="#">爱问知识</a>
+									<span class="c-left">2015-06-22</span>
+								</p>
+								<p>
+									<span><img src="img/文档类型3.jpg"></span>
+									<a href="#">计组课后习题答案</a>
+									<span class="c-left">2015-05-20</span>
+								</p>
+							</div>
+						</div>
+						<!--最近浏览-->
+
+					</div>
+				</div>
+				<!--左边导航部分-->
+			</div>
+			<!--row-->
+
+			<div class="row">
+				<div class="col-lg-3">
+					<!--导航部分-->
+					<div class="c-left-box">
+						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<h4 class="panel-title">
+        <a role="button" data-toggle="collapse"  href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" aria-expanded="false" class="c-touch">
+                        <span class="glyphicon glyphicon-file"></span>我的文档 <span class="caret"></span>
+          </a>
+      </h4>
+								</div>
+								<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+									<div class="panel-body c-dropdown">
+										<div class="btn-group btn-group-vertical" role="group">
+											<ul class="nav nav-tabs c-choice" id="cadjust" role="tablist">
+												<li role="presentation"><a href="#devote" aria-controls="devote" role="tab" data-toggle="tab"><span class=" glyphicon glyphicon-education"></span>我的贡献</a></li>
+												<li role="presentation"><a href="#collect" aria-controls="collect" role="tab" data-toggle="tab"><span class=" glyphicon glyphicon-heart"></span>我的收藏</a></li>
+												<!--	账号管理	-->
+												<li role="presentation"><a href="#download" aria-controls="download" role="tab" data-toggle="tab"><span class=" glyphicon glyphicon-download-alt"></span>我的下载</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingTwo">
+									<h4 class="panel-title">
+        <a class="collapsed c-touch" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" >
+           <span class="glyphicon glyphicon-wrench"></span> 账号管理 <span class="caret"></span>
+        </a>
+      </h4>
+								</div>
+								<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+									<div class="panel-body c-dropdown">
+										<div class="btn-group btn-group-vertical" role="group">
+											<ul class="nav nav-tabs c-choice" id="cadjust" role="tablist">
+
+												<li role="presentation"><a href="#message" aria-controls="message" role="tab" data-toggle="tab"><span class=" glyphicon glyphicon-pencil"></span>我的资料</a></li>
+												<li role="presentation"><a href="#picture" aria-controls="picture" role="tab" data-toggle="tab"><span class=" glyphicon glyphicon-user"></span>头像设置</a></li>
+												<li role="presentation"><a href="#safe" aria-controls="safe" role="tab" data-toggle="tab"><span class=" glyphicon glyphicon-lock"></span>帐号安全</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--导航部分-->
+				<div class="col-lg-9">
+					<div class="tab-content">
+						<!--我的贡献-->
+						<div role="tabpanel" class="tab-pane active" id="devote">
+							<div class="c-save c-adjustwidth">
+								<button class="btn btn-primary">编辑</button>
+							</div>
+							<table class="table table-hover c-owndevote">
+								<thead>
+									<tr>
+										<td>
+											<input type="checkbox" id="checkall1" value="全选" />
+										</td>
+										<td>文档</td>
+										<td></td>
+										<td class="c-fixwidth"><a href="#" style="display: none;"><span class="glyphicon glyphicon-trash"></span></a></td>
+										<td></td>
+										<td>下载积分</td>
+										<td>文档类型</td>
+										<td>下载次数</td>
+										<td>浏览次数</td>
+										<td>时间</td>
+									</tr>
+								</thead>
+								<tbody class="cdevadd c-addtrash">
+									<tr>
+										<td>
+											<input type="checkbox" name="items" />
+										</td>
+										<td><img src="img/文档类型2.jpg"><a href="#">爱问知识</a></td>
+										<td></td>
+										<td><a href="#" style="display: none;"><span class="glyphicon glyphicon-trash"></span></a></td>
+										<td></td>
+										<td>
+											<select>
+
+												<option value="0">0分</option>
+												<option value="1">1分</option>
+												<option value="3">3分</option>
+												<option value="5">5分</option>
+												<option value="7">7分</option>
+												<option value="9">9分</option>
+											</select>
+										</td>
+										<td>
+											<select>
+												<option value="公有">公有</option>
+												<option value="私有">私有</option>
+											</select>
+										</td>
+										<td>3</td>
+										<td>25</td>
+										<td><span>2015-06-22</span></td>
+									</tr>
+									<tr>
+										<td>
+											<input type="checkbox" name="items" />
+										</td>
+
+										<td><img src="img/文档类型3.jpg"><a href="#">计组课后习题答案</a></td>
+										<td></td>
+										<td class="c-fixwidth"><a href="#" style="display: none;"><span class="glyphicon glyphicon-trash"></span></a></td>
+										<td></td>
+										<td>
+											<select>
+												<option value="0">0分</option>
+												<option value="1">1分</option>
+												<option value="3">3分</option>
+												<option value="5">5分</option>
+												<option value="7">7分</option>
+												<option value="9">9分</option>
+											</select>
+										</td>
+										<td>
+											<select>
+												<option value="公有">公有</option>
+												<option value="私有">私有</option>
+											</select>
+										</td>
+										<td>3</td>
+										<td>10</td>
+										<td><span>2015-06-29</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!--我的贡献-->
+						<!--	我的收藏	-->
+						<div role="tabpanel" class="tab-pane" id="collect">
+							<div class="c-save c-adjustwidth">
+								<button class="btn btn-primary">编辑</button>
+							</div>
+
+							<div class="c-ownnavcontent">
+								<table class="table table-hover c-owncoll">
+									<thead>
+										<tr>
+											<td>
+												<input type="checkbox" id="checkall2" value="全选" />
+											</td>
+											<td>文件夹</td>
+											<td class="c-fixwidth"><a href="#" style="display: none;"><span class="glyphicon glyphicon-trash"></span></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>创建时间</td>
+									</tr>
+								</thead>
+								<tbody class="c-addtrash">
+									<tr>
+										<td>
+											<input type="checkbox" name="items" />
+										</td>
+										    <td class="c-fixtextwidth"><span class="glyphicon glyphicon-folder-open"></span><a href="#" class="c-filehide">  文件夹一 </a>
+												<input type="text" class="c-revise" hidden="hidden" />
+												<button type="button" class="btn btn-default btn-sm c-textsave" style="display: none;" value="确定">确定</button>
+												<button type="button" class="btn btn-default btn-sm c-textsave" style="display: none;" value="取消">取消</button>
+											</td>
+											<td class="c-fixwidth"><a href="#" style="display: none;"><span class="glyphicon glyphicon-trash"></span></a></td>
+											<td class="c-fixwidth"><a style="display: none;" class="c-controlrevise"><span class="glyphicon glyphicon-wrench"></span></a></td>
+											<td></td>
+											<td></td>
+											<td><span>2015-06-22</span></td>
+										</tr>
+										<tr>
+											<td>
+												<input type="checkbox" name="items" />
+											</td>
+											<td><span class="glyphicon glyphicon-folder-open"></span>
+												<a href="#" class="c-filehide">  文件夹二 </a>
+												<input type="text" class="c-revise" hidden="hidden" />
+												<button type="button" class="btn btn-default btn-sm c-textsave" style="display: none;">确定</button>
+												<button type="button" class="btn btn-default btn-sm c-textsave" style="display: none;">取消</button>
+											</td>
+											<td class="c-fixwidth"><a href="#" style="display: none;"><span class="glyphicon glyphicon-trash"></span></a></td>
+											<td class="c-fixwidth"><a style="display: none;" class="c-controlrevise"><span class="glyphicon glyphicon-wrench"></span></a></td>
+											<td></td>
+											<td></td>
+											<td><span>2015-06-29</span></td>
+										</tr>
+										</tbody>
+								</table>
+							</div>
+
+						</div>
+						<!--	我的收藏	-->
+						<!--我的下载-->
+						<div role="tabpanel" class="tab-pane" id="download">
+							<div class="c-save c-adjustwidth">
+								<button class="btn btn-primary">编辑</button>
+							</div>
+							<table class="table table-hover c-owndown">
+								<thead>
+									<tr>
+										<td>
+											<input type="checkbox" id="checkall3" value="全选" />
+										</td>
+										<td>文档</td>
+										<td class="c-fixwidth"><a href="#" style="display: none;"><span class="glyphicon glyphicon-trash"></span></td>
+										<td></td>
+										<td></td>
+										<td>时间</td>
+									</tr>
+								</thead>
+								<tbody class="c-addtrash">
+									<tr>
+										<td>
+											<input type="checkbox" name="items" />
+										</td>
+										<td><img src="img/文档类型2.jpg"><a href="#">爱问知识</a></td>
+										<td class="c-fixwidth"><a href="#" style="display: none;"><span class="glyphicon glyphicon-trash"></span></a></td>
+										<td></td>
+										<td></td>
+										<td><span>2015-06-22</span></td>
+									</tr>
+									<tr>
+										<td>
+											<input type="checkbox" name="items" />
+										</td>
+										<td><img src="img/文档类型3.jpg"><a href="#">计组课后习题答案</a></td>
+										<td class="c-fixwidth"><a href="#" style="display: none;"><span class="glyphicon glyphicon-trash"></span></a></td>
+										<td></td>
+										<td></td>
+										<td><span>2015-06-29</span></td>
+									</tr>
+									</tbody>
+							</table>
+						</div>
+
+						<!--我的下载-->
+						<!--我的资料修改-->
+						<div role="tabpanel" class="tab-pane c-msgeborder" id="message">
+							<div>
+								<button class="btn btn-primary c-saveedit" type="submit">编辑</button>
+							</div>
+							<form class="form-horizontal" id="cform">
+								<div class="form-group">
+									<label for="inputname" class="col-sm-2 control-label" required>昵称</label>
+									<div class="col-sm-6">
+										<input type="text" class="form-control" id="inputname" placeholder="请输入昵称" required>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label">性别</label>
+									<div class="col-sm-10 c-sexbirth">
+										<label>
+											<input type="radio" name="sex" value="男" checked> 男 </label>
+										<label>
+											<input type="radio" name="sex" value="女"> 女 </label>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-2 control-label">生日</label>
+									<div class="col-sm-6 c-sexbirth">
+										<select>
+											<option value="volvo">1990年</option>
+											<option value="saab">1991年</option>
+											<option value="opel">1992年</option>
+											<option value="audi">1993年</option>
+											<option value="volvo">1994年</option>
+											<option value="saab">1995年</option>
+											<option value="opel">1996年</option>
+											<option value="audi">1997年</option>
+											<option value="volvo">1998年</option>
+											<option value="saab">1999年</option>
+											<option value="opel">2000年</option>
+											<option value="audi">2001年</option>
+											<option value="volvo">2002年</option>
+											<option value="saab">2003年</option>
+											<option value="opel">2004年</option>
+											<option value="audi">2005年</option>
+											<option value="volvo">2006年</option>
+											<option value="saab">2007年</option>
+											<option value="opel">2008年</option>
+											<option value="audi">2009年</option>
+											<option value="opel">2010年</option>
+											<option value="audi">2011年</option>
+											<option value="volvo">2012年</option>
+											<option value="saab">2013年</option>
+											<option value="opel">2014年</option>
+											<option value="audi">2015年</option>
+										</select>
+										<select>
+											<option value="volvo">01月</option>
+											<option value="saab">02月</option>
+											<option value="volvo">03月</option>
+											<option value="saab">04月</option>
+											<option value="volvo">05月</option>
+											<option value="saab">06月</option>
+											<option value="volvo">07月</option>
+											<option value="saab">08月</option>
+											<option value="volvo">09月</option>
+											<option value="saab">10月</option>
+											<option value="volvo">11月</option>
+											<option value="saab">12月</option>
+										</select>
+										<select>
+											<option value="volvo">01日</option>
+											<option value="volvo">02日</option>
+											<option value="volvo">03日</option>
+											<option value="volvo">04日</option>
+											<option value="volvo">05日</option>
+											<option value="volvo">06日</option>
+											<option value="volvo">07日</option>
+											<option value="volvo">08日</option>
+											<option value="volvo">09日</option>
+											<option value="volvo">10日</option>
+											<option value="volvo">11日</option>
+											<option value="volvo">12日</option>
+											<option value="volvo">13日</option>
+											<option value="volvo">14日</option>
+											<option value="volvo">15日</option>
+											<option value="volvo">16日</option>
+											<option value="volvo">17日</option>
+											<option value="volvo">18日</option>
+											<option value="volvo">19日</option>
+											<option value="volvo">20日</option>
+											<option value="volvo">21日</option>
+											<option value="volvo">22日</option>
+											<option value="volvo">23日</option>
+											<option value="volvo">24日</option>
+											<option value="volvo">25日</option>
+											<option value="volvo">26日</option>
+											<option value="volvo">27日</option>
+											<option value="volvo">28日</option>
+											<option value="volvo">29日</option>
+											<option value="volvo">30日</option>
+											<option value="volvo">31日</option>
+										</select>
+
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputEmail" class="col-sm-2 control-label">邮箱</label>
+									<div class="col-sm-6">
+										<input type="email" class="form-control" id="inputEmail" placeholder="请输入邮箱" required>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputblog" class="col-sm-2 control-label">博客</label>
+									<div class="col-sm-6">
+										<input class="form-control" id="inputblog" placeholder="请输入博客">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputextarea" class="col-sm-2 control-label">个人简介</label>
+									<div class="col-sm-6">
+										<textarea class="form-control" rows="3" cols="3" placeholder="字数不超过200字"></textarea>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!--我的资料修改-->
+						<!--我的头像修改-->
+						<div role="tabpanel" class="tab-pane" id="picture">
+							<div class="row">
+								<div class="col-lg-10 c-img-center">
+
+									<div class="thumbnail">
+										<img src="img/头像背景区域.jpg">
+										<div class="caption">
+											<p>
+												<h6>仅支持JPG、GIF、PNG、JPEG、BMP格式，文件小于4M</h6></p>
+											<p>
+												<button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-picture"></span> 选择图片 </button>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="c-suggest-img">
+								<h5>推荐头像:</h5>
+								<div><img src="img/推荐图片1.jpg"></div>
+								<div><img src="img/推荐图片2.jpg"></div>
+								<div><img src="img/推荐图片3.jpg"></div>
+								<div><img src="img/推荐图片4.jpg"></div>
+								<div><img src="img/推荐图片5.jpg"></div>
+								<div><img src="img/推荐图片6.jpg"></div>
+								<div><img src="img/推荐图片7.jpg"></div>
+								<div><img src="img/推荐图片8.jpg"></div>
+								<div><img src="img/推荐图片9.jpg"></div>
+								<div><img src="img/推荐图片10.jpg"></div>
+								<p>
+									<button type="button" class="c-img-button">保存 </button>
+								</p>
+							</div>
+						</div>
+						<!--我的头像修改-->
+						<!--密码修改-->
+						<div role="tabpanel" class="tab-pane" id="safe">
+							<form class="form-horizontal" id="c-pswchange">
+								<div class="form-group">
+									<label for="c-firstpsw" class="col-sm-2 control-label">原始密码</label>
+									<div class="col-sm-6">
+										<input type="password" class="form-control" id="c-firstpsw" name="c-firstpsw" placeholder="请输入原始密码">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="c-lastpsw" class="col-sm-2 control-label">密码</label>
+									<div class="col-sm-6">
+										<input type="password" class="form-control" id="c-lastpsw" name="c-lastpsw" placeholder="请输入密码">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="c-lastpswagain" class="col-sm-2 control-label">密码</label>
+									<div class="col-sm-6">
+										<input type="password" class="form-control" id="c-lastpswagain" name="c-lastpswagain" placeholder="请再次输入密码">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-offset-2 col-sm-10">
+										<button type="submit" class="btn btn-default">保存</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!--密码修改-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--侧边栏-->
+		<div class="c-toup">
+			<a type="button" class="c-touphide">回到顶部</a>
+			<a href="#" type="button" class="btn btn-default c-touphov" style="display: none;"><span class="glyphicon glyphicon-chevron-up"></span>  </a>
+		</div>
+		<!--侧边栏-->
+
+		<script src="js/c-home.js"></script>
+
+	</body>
+
+</html>

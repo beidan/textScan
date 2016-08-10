@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/regular.css" />
+		<link rel="stylesheet" href="css/Index.css" />
+		<link rel="stylesheet" href="css/UploadFile.css" />
+		<link rel="stylesheet" href="css/SuccessLoad.css" />
+		<link rel="shortcut icon" href="img/logomax.png" type="image/x-icon" />
+		<title>TEXT文档上传</title>
+	</head>
+
+	<body>
+		<div id="z-header">
+			<img src="img/logomax.png" />
+			<div id="z-search">
+				<h1>TEXT在线浏览系统</h1>
+				<form>
+					<input type="text" class="z-main-search" name="key" placeholder="请输入你要搜索的文档名" />
+					<input type="submit" value="搜索" class="z-search-btn" />
+					<ul>
+						<li>
+							<label for="z-all">
+								<input type="radio" name="format" value="all" id="z-all" /> 全部
+							</label>
+						</li>
+						<li>
+							<label for="z-doc">
+								<input type="radio" name="format" value="doc" id="z-doc" /> DOC
+							</label>
+						</li>
+						<li>
+							<label for="z-ppt">
+								<input type="radio" name="format" value="ppt" id="z-ppt" /> PPT
+							</label>
+						</li>
+						<li>
+							<label for="z-txt">
+								<input type="radio" name="format" value="txt" id="z-txt" /> TXT
+							</label>
+						</li>
+						<li>
+							<label for="z-pdf">
+								<input type="radio" name="format" value="pdf" id="z-pdf" /> PDF
+							</label>
+						</li>
+						<li>
+							<label for="z-xls">
+								<input type="radio" name="format" value="xls" id="z-xls" /> XLS
+							</label>
+						</li>
+					</ul>
+				</form>
+			</div>
+			<div id="z-personal">
+				<div class="z-dropDown">
+					<a href="#"><span class="fa fa-question"></span>帮助</a>
+					<ul>
+						<li><a href="#">新手指南</a></li>
+						<li><a href="#">意见反馈</a></li>
+						<li><a href="#">投诉</a></li>
+					</ul>
+				</div>
+
+				<div class="z-dropDown">
+					<a href="#"><span class="fa fa-user"></span>LuckyWinty</a>
+					<ul>
+						<li><a href="#">个人中心</a></li>
+						<li><a href="#">修改信息</a></li>
+						<li><a href="#">退出</a></li>
+					</ul>
+				</div>
+				<div id="z-text-sum">
+					<h3>TEXT文档总数</h3>
+					<ul>
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li>6</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="z-divider">
+			<ul>
+				<li><a href="Index.html">首页</a></li>
+				<li><a href="#">分类</a></li>
+			</ul>
+		</div>
+		<div id="upload">
+			<ul>
+				<li><a href="#">TEXT浏览系统</a></li>
+				<li><a href="#">文档上传</a></li>
+			</ul>
+			<h2>上传文档</h2><span class="fa fa-wordpress fa-lg">与世界共享你的知识</span>
+			<div class="upload-sucess">
+
+				<div id="D-upload">
+					<div id="D-upload-box">
+						<i class="fa fa-smile-o fa-5x" style="color: #f94f04;padding: 50px 20px 0px 150px;"></i><span id="D-upload-first-sentence">恭喜！文档上传成功</span>
+						<span id="D-upload-second-sentence">数据结构.doc</span><span id="D-upload-third-sentence">已上传</span>
+						<span id="D-upload-forth-sentence">获取<span id="D-upload-forth-num">2</span>积分</span>
+						<a id="D-upload-a" href="#">继续上传</a>
+					</div>
+				</div>
+			</div>
+			<div id="z-footer">
+				<p>@2015TEXT</p>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+		<script src="js/UploadFile.js"></script>
+	</body>
+
+</html>

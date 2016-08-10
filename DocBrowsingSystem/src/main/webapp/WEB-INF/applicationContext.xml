@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+          http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.1.xsd
+          http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd
+          http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.1.xsd
+">
+    <!-- 自动扫描dao和service包(自动注入) -->
+    <context:annotation-config base-package="com.etop.odbs" />
+    
+    <!-- 配置datasource 也就是对于数据可链接的配置 -->
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/odbs"/>
+        <property name="username" value="root"/>
+        <property name="password" value="cjh123"/>        <!-- 数据库用户账号和密码 -->
+        <!-- 配置连接池的初始值 -->
+        <property name="initialSize" value="1" />
+        <!-- 连接池的最大值 -->
+        <!-- <property name="maxActive" value="500"/> -->
+        <!-- 最大空闲时，当经过一个高峰之后，连接池可以将一些用不到的连接释放，一直减少到maxIdle为止 -->
+        <!-- <property name="maxIdle" value="2"/> -->
+        <!-- 当最小空闲时，当连接少于minIdle时会自动去申请一些连接 -->
+        <property name="minIdle" value="1" />
+        <property name="maxActive" value="200" />
+        <property name="maxIdle" value="20" />
+        <property name="maxWait" value="1000" />
+    </bean>
+    
+    <!-- 配置sessionFactory -->
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="packagesToScan">
+            <value>com.etop.odbs.beans</value>
+        </property>     
+
+        <property name="hibernateProperties">
+            <!-- 配置hibernate -->
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+                <prop key="hibernate.show_sql">true</prop>
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
+                <prop key="hibernate.format_sql">false</prop>
+                <!-- 设置二级缓存为true -->
+                <prop key="hibernate.cache.use_second_level_cache">true</prop>
+                <!--设置相应的查询缓存 -->
+                <prop key="hibernate.cache.use_query_cache">true</prop>
+                <!-- 设置二级缓存所提供的类 -->
+                <prop key="hibernate.cache.provider_class">net.sf.ehcache.hibernate.EhCacheProvider</prop>
+                <!-- 在hibernate4.0之后需要设置facotory_class -->
+                <prop key="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</prop>
+                <prop key="hibernate.cache.provider_configuration_file_resource_path">ehcache.xml</prop>
+            </props>
+        </property>       
+    </bean>
+    
+    <!-- 配置spring事务管理 -->
+    <bean id="myTxManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <aop:config>
+        <!-- 声明式事物 -->
+        <aop:pointcut id="productServiceMethods" expression="execution(* com.etop.odbs.service.*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="productServiceMethods"/>
+    </aop:config>
+
+    <tx:advice id="txAdvice" transaction-manager="myTxManager">
+        <tx:attributes>
+            <tx:method name="*" propagation="REQUIRED" read-only="true"/>
+            <!-- 以下方法都是可能设计修改的方法，就无法设置为只读 -->
+            <tx:method name="add*" propagation="REQUIRED"/>
+            <tx:method name="del*" propagation="REQUIRED"/>
+            <tx:method name="update*" propagation="REQUIRED"/>
+            <tx:method name="save*" propagation="REQUIRED"/>
+        </tx:attributes>
+    </tx:advice>
+    
+    <!-- 以上配置以后你们再慢慢学习吧 -->
+    
+    <!-- 上传文件 -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="10000000"></property>
+    </bean>
+    
+    <!-- 下面对于类对注入进行配置 -->
+    <bean id="userDao" class="com.etop.odbs.dao.UserDao"> 
+        <property ref="sessionFactory" name="sessionFactory"/>
+    </bean>
+    
+    <bean id="userService" class="com.etop.odbs.service.UserService">
+        <property name="userDao" ref="userDao"/>
+    </bean>
+</beans>

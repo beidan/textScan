@@ -1,0 +1,374 @@
+* {
+	
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: #F9F9F9 !important;
+}
+.c-bigbox {
+	width: 980px !important;
+	padding-top: 20px;
+	background-color: #FEFEFE;
+}
+
+textarea{
+	resize:none;
+}
+
+
+a:focus,
+button:focus{
+	outline: none !important;
+}
+
+/*分割*/
+
+#z-divider {
+	width: 100%;
+	background-color: rgba(28, 42, 103, 0.9);
+}
+#z-divider ul {
+	width: 80%;
+	margin: 0 auto;
+	padding: 5px 0px;
+}
+#z-divider ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+#z-divider ul li a:hover,#z-divider ul li a:visited{
+	color:#FFFFFF;
+}
+
+/*左边导航区域*/
+.c-butown{
+	display: block;
+	width: 144px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 3px;
+	background-color: rgba(102, 175, 233, 0.8);
+	color: #FFFFFF;
+}
+.c-butown:hover{
+		background-color: rgba(102, 175, 233, 1);
+	text-decoration: none;
+	color: white !important;
+}
+
+
+.c-touch{
+	width: 150px;
+	display: block;
+}
+
+.caption {
+	text-align: center;
+}
+.c-left-box {
+	height: 400px;
+}
+.c-top-button {
+	margin: 10px 0px;
+}
+.col-lg-3 {
+	width: 200px !important;
+}
+.c-ownmsge {
+	height: 225px;
+	background-color: rgb(245, 245, 245) !important;
+	border: none !important;
+}
+.c-ownmsge a div {
+	width: 80px;
+	position: relative;
+	left: 30px;
+	top: -22px;
+	text-align: center;
+	color: white;
+}
+.c-ownmsge a:hover {
+	text-decoration: none !important;
+}
+.c-ownmsge a:hover div {
+	background-color: #437DE3;
+}
+.c-imgshow {
+	display: block;
+	height: 90px;
+	padding: 10px;
+}
+.c-dropdown {
+	padding: 0px !important;
+}
+.caret {
+	float: right;
+	margin-top: 8px;
+}
+.c-choice li,
+.c-choice li a
+{
+	width: 169px !important;
+}
+
+
+#headingOne,
+#headingTwo {
+	color: white;
+	background-color: #1A7AAE;
+}
+/*左边导航区域*/
+/*上传动态，最近浏览部分*/
+
+.c-left-more {
+	float: right;
+	color: lightslategray;
+	margin-top: 10px;
+}
+.c-border {
+	height: 225px;
+	border-left: 1px dashed rgb(212, 205, 205);
+}
+.c-noborder {
+	border: none !important;
+}
+.c-left {
+	position: absolute;
+	right: 30px;
+	color: darkgray;
+}
+
+.c-widthflow{
+	width: 420px !important;
+}
+
+/*上传动态，最近浏览部分*/
+/*我的资产*/
+
+.c-left-wealth {
+	height: 225px !important;
+	/*border: 1px dashed rgb(203, 182, 182);*/
+}
+.c-wealth-top {
+	width: 290px;
+	height: 80px;
+	border-bottom: 1px dashed #C0BABA;
+}
+.c-wealth-top p {
+	text-align: center;
+}
+.c-text {
+	margin-top: 20px;
+}
+.c-wealth-top div {
+	height: 60px;
+	width: 90px;
+	float: left;
+}
+.c-wealth-top-img {
+	margin-bottom: 0px;
+}
+.c-wealth-top-img>span {
+	position: relative;
+	margin-top: 20px;
+	background-color: lightblue;
+	top: -10px;
+	transition: top 0.4s ease-in-out;
+}
+.c-wealth-top div:hover .c-wealth-top-img>span{
+	top: -15px;
+	background-color: rgb(65, 183, 222);
+}
+.c-wealth-bottom {
+	height: 55px;
+	width: 280px;
+}
+.c-wealth-bottom div {
+	float: left;
+	height: 55px;
+	width: 90px;
+	line-height: 55px;
+}
+.c-wealth-bottom-1 {
+	color: #153641;
+}
+.c-wealth-bottom-2 {
+	color: #153641;
+}
+.c-wealth-bottom-3 {
+	color: #153641;
+}
+.c-badge {
+	position: relative;
+	bottom: 10px;
+	right: 2px;
+}
+.c-threecolor {
+	background-color: #153641 !important;
+}
+/*我的资产*/
+/*右边我的资料区域*/
+/*错误信息放置位置*/
+#login1-error{
+	background: url(../img/sign_error.png) no-repeat;
+	padding-left:20px;
+	position: absolute;
+	top: -25px;
+	left: 16px;
+	color: red !important;
+}
+
+#cform label,
+#c-pswchange label{
+	color: black !important;
+}
+
+.c-msgeborder {
+	border-top: 1px dashed #BFB9B9;
+	height: 600px;
+}
+.c-sexbirth {
+	margin-top: 5px;
+}
+.c-saveedit {
+	position: relative;
+	left: 650px;
+	top: 10px;
+	
+}
+/*右边我的资料区域*/
+/*右边我的头像区域*/
+
+.c-suggest-img div {
+	float: left;
+}
+.c-suggest-img div img {
+	width: 65px;
+	padding: 5px;
+}
+.c-img-center {
+	margin-left: 60px;
+}
+.c-img-center div {
+	padding-top: 15px;
+	margin-bottom: 0px;
+	border: 0px;
+}
+.c-img-button {
+	width: 100px !important;
+	height: 40px !important;
+	display: block;
+	clear: both;
+}
+/*右边我的头像区域*/
+
+.c-toup {
+	position: fixed;
+	bottom: 20px;
+	right: 60px;
+}
+.c-touphide {
+	display: none;
+	position: absolute;
+	left: -82px;
+	border-radius: 3px;
+	color: white;
+	background-color: #1A7AAE;
+	line-height: 34px;
+	text-align: center;
+	height: 34px;
+	width: 82px;
+	border: 1px solid rgb(201, 200, 200);
+}
+.c-toupbut {
+	background-color: #1A7AAE !important;
+	color: white !important;
+}
+/*我的贡献*/
+.c-save{
+	position: relative;
+	left: 650px;
+	top: 5px;
+	width: 55px;
+}
+
+.c-fixwidth{
+	width: 35px;
+}
+
+
+.tab-content {
+	border-top: 1px dashed #C0B8B8;
+}
+/*我的贡献*/
+
+
+/*我的收藏*/
+.c-ownnav ul{
+	height: 40px;
+	color: white !important;
+	background-color: #3889B6;
+	text-align: center;
+}
+.c-ownnav li{
+	float: left;
+	list-style-type: none;
+	width: 90px;
+	line-height: 40px;
+}
+
+.c-ownnav li:hover{
+	background-color: rgb(54, 127, 168);
+	cursor: pointer;
+}
+.c-ownnav a{
+	color: white !important; 
+}
+
+
+.c-controlrevise{
+	cursor: pointer;
+}
+
+.c-fixtextwidth{
+	width: 300px;
+}
+
+.c-fixtextwidth span{
+	padding-right: 5px;
+}
+
+.c-ownnavcontent table tbody tr{
+	height: 48px;
+}
+
+/*我的收藏*/
+
+
+/*头像设置*/
+    .c-selectimg{
+    	background-color: #F00;
+    }
+    
+    .c-noselectimg{
+    	background-color: white;
+    }
+    
+    .c-suggest-img div:hover{
+    	cursor: pointer;
+    }
+    
+    
+/*头像设置*/
+/*密码修改*/
+     #safe{
+     	padding-top: 20px;
+     }
+/*密码修改*/
+
+
+
+
+

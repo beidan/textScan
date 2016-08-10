@@ -1,0 +1,219 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	min-width: 1200px;
+	max-width: 1450px;
+	margin: 0 auto;
+	background: rgba(161, 161, 161, 0.2);
+}
+/*字体颜色*/
+
+h1,
+label,
+h3,
+#z-text-sum ul li,
+a,
+.z-large-classify p {
+	color: #FFFFFF;
+}
+a {
+	background: none;
+}
+a:hover,
+a:focus {
+	background: none;
+	outline: none;
+	outline-offset: 0px;
+	color: #FFFFFF;
+}
+a:focus {
+	text-decoration: none;
+}
+/*清楚浮动*/
+
+#z-header:after,
+#z-sectionOne:after,
+.z-hot-main:after,
+.z-hot-brif:after,
+#z-hot .z-hot-list:after,
+.z-hot-main:after,
+#z-last-push:after,
+#z-last-push .z-lastest:after,
+#z-sectionTwo:after,
+#z-author:after,
+#z-author li:after {
+	display: block;
+	content: "";
+	visibility: hidden;
+	clear: left;
+}
+/*改变鼠标状态*/
+
+#z-search form ul li label,
+#z-classify .z-large-classify p {
+	cursor: pointer;
+}
+/*页头*/
+
+#z-header {
+	width: 100%;
+	max-width: 1450px;
+	max-height: 180px;
+	margin: 0 auto;
+	background: url(../img/m_756253fec7b50000012d6138956c.jpg) no-repeat;
+	background-size: 100% 100%;
+	color: white;
+}
+/*Logo*/
+
+#z-header img {
+	float: left;
+	width: 150px;
+	height: 120px;
+	margin-top: 30px;
+	margin-left: 15%;
+}
+/*搜索区*/
+
+#z-search {
+	float: left;
+	margin-left: 20px;
+}
+#z-search h1 {
+	font-weight: normal;
+	margin-top: 30px;
+	font-size: 28px;
+}
+/*搜索form*/
+
+form {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	box-sizing: content-box;
+}
+.z-main-search {
+	display: inline-block;
+	width: 350px;
+	height: 35px;
+	border-radius: 3px;
+	padding-left: 10px;
+	margin-bottom: 10px;
+	border: solid 1px rgba(82, 124, 197, 0.6);
+	color: #363636;
+}
+.z-search-btn {
+	display: inline-block;
+	width: 70px;
+	height: 35px;
+	border: solid 1px #FFFFFF;
+	background-color: #1779B7;
+	color: black;
+}
+.z-search-btn:hover {
+	background-color: #146BA2;
+	;
+}
+#z-search ul li {
+	display: inline-block;
+}
+/*个人中心及帮助*/
+
+#z-personal {
+	margin-right: 15%;
+}
+#z-personal,
+.z-dropDown {
+	float: right;
+	margin-top: 5px;
+}
+.z-dropDown {
+	position: relative;
+	margin-right: 10px;
+}
+.z-dropDown a {
+	text-decoration: underline;
+	color: white;
+}
+.z-dropDown a:hover {
+	color: rgba(251, 251, 251, 0.7);
+}
+.z-dropDown a:hover+ul,
+.z-dropDown ul:hover {
+	display: inline-block;
+}
+.z-dropDown ul {
+	position: absolute;
+	top: 17px;
+	left: 5px;
+	display: none;
+	text-align: center;
+	width: 90px;
+	border-radius: 3px;
+	background-color: rgba(137, 128, 155, 0.3);
+}
+.z-dropDown ul li {
+	margin-top: 3px;
+}
+.z-dropDown ul li:hover {
+	background-color: rgba(137, 128, 155, 0.7);
+}
+.z-dropDown ul li a {
+	display: block;
+	width: 90px;
+	line-height: 1.3;
+	text-decoration: none;
+}
+/*图标处理*/
+
+.fa-question,
+.fa-user {
+	color: #FFFFFF;
+	margin-right: 5px;
+}
+/*文档总数*/
+
+#z-text-sum {
+	width: 200px;
+	height: 80px;
+	margin-top: 85px;
+}
+#z-text-sum h3 {
+	text-align: center;
+	margin-top: 5px;
+	font-size: 18px;
+	font-weight: bold;
+}
+#z-text-sum ul {
+	text-align: center;
+	margin-top: 10px;
+}
+#z-text-sum ul li {
+	display: inline-block;
+	font-weight: 800;
+	width: 25px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 10%;
+	background: rgba(65, 79, 144, 0.3);
+}
+/*分割*/
+
+#z-divider {
+	width: 100%;
+	/*background-color: rgba(73, 157, 242, 1);*/
+	
+	background-color: rgba(28, 42, 103, 0.9);
+	margin-top: 5px;
+}
+#z-divider ul {
+	width: 80%;
+	margin: 0 auto;
+	padding: 5px 0px;
+}
+#z-divider ul li {
+	display: inline-block;
+	margin-right: 20px;
+}

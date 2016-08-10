@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/regular.css" />
+		<link rel="stylesheet" href="css/Index.css" />
+		<link rel="shortcut icon" href="img/logomax.png" type="image/x-icon" />
+		<link rel="stylesheet" href="css/login.css" />
+		<title>TEXT在线文档浏览系统登录</title>
+	</head>
+
+	<body>
+		<div id="z-header">
+			<img src="img/logomax.png" />
+			<div id="z-search">
+				<h1>TEXT在线浏览系统</h1>
+				<form>
+					<input type="text" class="z-main-search" name="key" placeholder="请输入你要搜索的文档名" />
+					<input type="submit" value="搜索" class="z-search-btn" />
+					<ul>
+						<li>
+							<label for="z-all">
+								<input type="radio" name="format" value="all" id="z-all" /> 全部
+							</label>
+						</li>
+						<li>
+							<label for="z-doc">
+								<input type="radio" name="format" value="doc" id="z-doc" /> DOC
+							</label>
+						</li>
+						<li>
+							<label for="z-ppt">
+								<input type="radio" name="format" value="ppt" id="z-ppt" /> PPT
+							</label>
+						</li>
+						<li>
+							<label for="z-txt">
+								<input type="radio" name="format" value="txt" id="z-txt" /> TXT
+							</label>
+						</li>
+						<li>
+							<label for="z-pdf">
+								<input type="radio" name="format" value="pdf" id="z-pdf" /> PDF
+							</label>
+						</li>
+						<li>
+							<label for="z-xls">
+								<input type="radio" name="format" value="xls" id="z-xls" /> XLS
+							</label>
+						</li>
+					</ul>
+				</form>
+			</div>
+			<div id="z-personal">
+				<div class="z-dropDown">
+					<a href="#"><span class="fa fa-question"></span>帮助</a>
+					<ul>
+						<li><a href="D-help.html">新手指南</a></li>
+						<li><a href="#">意见反馈</a></li>
+						<li><a href="#">投诉</a></li>
+					</ul>
+				</div>
+
+				<div class="z-dropDown">
+					<a href="#"><span class="fa fa-user"></span>LuckyWinty</a>
+					<ul>
+						<li><a href="#">个人中心</a></li>
+						<li><a href="#">修改信息</a></li>
+						<li><a href="#">退出</a></li>
+					</ul>
+				</div>
+				<div id="z-text-sum">
+					<h3>TEXT文档总数</h3>
+					<ul>
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li>6</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="z-divider">
+			<ul>
+				<li><a href="Index.html">首页</a></li>
+				<li><a href="#">分类</a></li>
+			</ul>
+		</div>
+		<div id="z-container">
+			<section id="z-sectionOne">
+				<div id="z-classify">
+					<div class="z-large-classify">
+						<p href="#"><span class="fa fa-tasks fa-lg"></span>教育类<span class="fa fa-sort-desc fa-lg"></span></p>
+						<ul class="z-detail-classify" id="z-default-classify">
+							<li><a href="#">小学教育</a></li>
+							<li><a href="#">初中教育</a></li>
+							<li><a href="#">高中教育</a></li>
+							<li><a href="#">大学教育</a></li>
+							<li><a href="#">研究生</a></li>
+							<li><a href="#">博士</a></li>
+						</ul>
+					</div>
+					<div class="z-large-classify">
+						<p href="#"><span class="fa fa-dropbox fa-lg"></span>IT类<span class="fa fa-sort-desc fa-lg"></span></p>
+						<ul class="z-detail-classify">
+							<li><a href="#">前端开发</a></li>
+							<li><a href="#">后端开发</a></li>
+							<li><a href="#">移动开发</a></li>
+							<li><a href="#">数据处理</a></li>
+							<li><a href="#">图像处理</a></li>
+							<li><a href="#">开发工具</a></li>
+						</ul>
+					</div>
+					<div class="z-large-classify">
+						<p href="#"><span class="fa fa-inbox fa-lg"></span>实用类<span class="fa fa-sort-desc fa-lg"></span></p>
+						<ul class="z-detail-classify">
+							<li><a href="#">求职/职场</a></li>
+							<li><a href="#">总结/汇报</a></li>
+							<li><a href="#">工作范文</a></li>
+							<li><a href="#">表格/模板</a></li>
+							<li><a href="#">计划/规划</a></li>
+							<li><a href="#">管理/提升</a></li>
+						</ul>
+					</div>
+					<div class="z-large-classify">
+						<p href="#"><span class="fa fa-leanpub fa-lg"></span>资格考试<span class="fa fa-sort-desc fa-lg"></span></p>
+						<ul class="z-detail-classify">
+							<li><a href="#">财会类</a></li>
+							<li><a href="#">公务员类</a></li>
+							<li><a href="#">学历类</a></li>
+							<li><a href="#">建筑类</a></li>
+							<li><a href="#">外语类</a></li>
+							<li><a href="#">资格类</a></li>
+						</ul>
+					</div>
+					<div class="z-large-classify">
+						<p href="#"><span class="fa fa-shopping-cart fa-lg"></span>生活悠闲<span class="fa fa-sort-desc fa-lg"></span></p>
+						<ul class="z-detail-classify">
+							<li><a href="#">饮食</a></li>
+							<li><a href="#">游戏</a></li>
+							<li><a href="#">体育/运动</a></li>
+							<li><a href="#">旅游购物</a></li>
+							<li><a href="#">保健养生</a></li>
+							<li><a href="#">幽默滑稽</a></li>
+						</ul>
+					</div>
+					<div class="z-large-classify">
+						<p href="#"><span class="fa fa-send-o fa-lg"></span>其他<span class="fa fa-sort-desc fa-lg"></span></p>
+						<ul class="z-detail-classify" id="z-other-slide">
+							<li><a href="#">影视/动漫</a></li>
+							<li><a href="#">音乐</a></li>
+							<li><a href="#">创业</a></li>
+							<li><a href="#">电力技术</a></li>
+							<li><a href="#">石油石化</a></li>
+							<li><a href="#">产品</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="z-wrap">
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+						</ol>
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="img/doc.jpg">
+								<div class="carousel-caption">
+									<!--doc文档总数量为1234423，值得拥有！-->
+								</div>
+							</div>
+							<div class="item">
+								<img src="img/excel.jpg" alt="...">
+								<div class="carousel-caption">
+									<!--/*此处可增加文字描述*/-->
+								</div>
+							</div>
+							<div class="item">
+								<img src="img/ppt.jpg" alt="...">
+								<div class="carousel-caption">
+									<!--/*此处可增加文字描述*/-->
+								</div>
+							</div>
+
+							<div class="item">
+								<img src="img/txt.jpg" alt="...">
+								<div class="carousel-caption">
+									<!--/*此处可增加文字描述*/-->
+								</div>
+							</div>
+
+						</div>
+
+						<!-- Controls -->
+						<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+				<div class="c-contact">
+					<form id="c-commentForm" name="c-cForm" action="#" method="get">
+
+						<div class="c-top">
+							<h3>用户登陆</h3>
+							<a href="#">立即注册</a>
+						</div>
+						<p id="c-fo1"></p>
+						<ul class="c-clul">
+							<li>
+
+								<input class="c-imgpo" id="c-login" name="c-login" type="text" placeholder="请输入账号" onpaste="return false" />
+							</li>
+							<li>
+								<input class="c-imgpass" id="c-password" name="c-password" type="password" placeholder="请输入密码" onpaste="return false" />
+							</li>
+						</ul>
+						<div class="c-forget">
+							<input id="c-remeber" name="c-typeList" type="checkbox" checked="checked" />
+							<label for="c-remeber">记住密码</label>
+							<a href="##">忘记密码？</a>
+
+						</div>
+
+						<div class="c-log">
+							<input id="c-logg" type="submit" value="登 陆">
+						</div>
+					</form>
+				</div>
+			</section>
+			<div class="z-partition"></div>
+			<section id="z-sectionTwo">
+				<div id="z-hot">
+					<h2>热门文档抢先看</h2>
+					<ul class="z-hot-biglist">
+						<li>
+							<div class="z-hot-main">
+								<span class="fa fa-tasks fa-5x"></span>
+								<div class="z-hot-brif">
+									<h4>类别:教育类</h4>
+									<h5>总数:1150篇</h5>
+									<p>下载次数:9809次</p>
+								</div>
+							</div>
+							<ul class="z-comeFrom">
+								<li>
+									<p><span class="fa fa-volume-up fa-lg"></span>本系统教育文档内容广泛，是学习的好帮手。</p>
+								</li>
+								<li>
+									<p>收录包括专业出版社<a href="#"><span class="fa fa-vimeo-square"></span>人民出版社</a>和<a href="#"><span class="fa fa-stumbleupon"></span>清华出版社</a>等权威专业文档。</p>
+								</li>
+							</ul>
+							<ul class="z-hot-list">
+								<li><a href="readPage.html"><span class="fa fa-file-word-o"></span>
+								小学生作文
+							</a><span class="fa fa-hand-o-up">&nbsp;693</span></li>
+								<li><a href="#"><span class="fa fa-file-pdf-o"></span>
+								中考优秀作文</a><span class="fa fa-hand-o-up">&nbsp;574</span></li>
+								<li><a href="#"><span class="fa fa-file-word-o"></span>
+								高考满分作文100篇</a><span class="fa fa-hand-o-up">&nbsp;457</span></li>
+								<li><a href="#"><span class="fa fa-file-pdf-o"></span>
+								英语考研范文</a><span class="fa fa-hand-o-up">&nbsp;346</span></li>
+							</ul>
+						</li>
+						<li>
+							<div class="z-hot-main">
+								<span class="fa fa-dropbox fa-5x"></span>
+								<div class="z-hot-brif">
+									<h4>类别:IT类</h4>
+									<h5>总数:11650篇</h5>
+									<p>下载次数:987609次</p>
+								</div>
+							</div>
+							<ul class="z-comeFrom">
+								<li>
+									<p><span class="fa fa-volume-up fa-lg"></span>本系统IT文档内容广泛，是专业IT人员的好助手。</p>
+								</li>
+								<li>
+									<p>收录包括专业出版社<a href="#"><span class="fa fa-lastfm"></span>lastfm</a>和<a href="#"><span class="fa fa-skyatlas"></span>skyatlas</a>等权威专业文档。</p>
+								</li>
+							</ul>
+							<ul class="z-hot-list">
+								<li><a href="#"><span class="fa fa-file-word-o"></span>
+								数据结构
+							</a><span class="fa fa-hand-o-up">&nbsp;693</span></li>
+								<li><a href="#"><span class="fa fa-file-powerpoint-o"></span>
+								操作系统</a><span class="fa fa-hand-o-up">&nbsp;574</span></li>
+								<li><a href="#"><span class="fa fa-file-pdf-o"></span>
+								计算机组成原理</a><span class="fa fa-hand-o-up">&nbsp;457</span></li>
+								<li><a href="#"><span class="fa fa-file-word-o"></span>
+								线性代数</a><span class="fa fa-hand-o-up">&nbsp;346</span></li>
+							</ul>
+						</li>
+						<li>
+							<div class="z-hot-main">
+								<span class="fa fa-inbox fa-5x"></span>
+								<div class="z-hot-brif">
+									<h4>类别:实用类</h4>
+									<h5>总数:508篇</h5>
+									<p>下载次数:57609次</p>
+								</div>
+							</div>
+							<ul class="z-comeFrom">
+								<li>
+									<p><span class="fa fa-volume-up fa-lg"></span>本系统实用类题材广，有很高的实用价值。</p>
+								</li>
+								<li>
+									<p>收录包括专业出版社<a href="#"><span class="fa fa-hospital-o"></span>人民医院</a>和<a href="#"><span class="fa fa-heart-o"></span>广州医科大学</a>等权威专业文档。</p>
+								</li>
+							</ul>
+							<ul class="z-hot-list">
+								<li><a href="#"><span class="fa fa-file-word-o"></span>
+								常见疾病原理分析
+							</a><span class="fa fa-hand-o-up">&nbsp;423</span></li>
+								<li><a href="#"><span class="fa fa-file-word-o"></span>
+								感冒预防策略</a><span class="fa fa-hand-o-up">&nbsp;324</span></li>
+								<li><a href="#"><span class="fa fa-file-excel-o"></span>
+								面试技巧50招</a><span class="fa fa-hand-o-up">&nbsp;245</span></li>
+								<li><a href="#"><span class="fa fa-file-pdf-o"></span>
+								课题研究梗概</a><span class="fa fa-hand-o-up">&nbsp;186</span></li>
+							</ul>
+						</li>
+						<li>
+							<div class="z-hot-main">
+								<span class="fa fa-leanpub fa-5x"></span>
+								<div class="z-hot-brif">
+									<h4>类别:资格考试</h4>
+									<h5>总数:450篇</h5>
+									<p>下载次数:987609次</p>
+								</div>
+							</div>
+							<ul class="z-comeFrom">
+								<li>
+									<p><span class="fa fa-volume-up fa-lg"></span>资格考试资料题材非常有参考价值。</p>
+								</li>
+								<li>
+									<p>收录包括专业出版社<a href="#"><span class="fa fa-yelp"></span>华图教育</a>和<a href="#"><span class="fa fa-xing"></span>新东方英语</a>等权威专业文档。</p>
+								</li>
+							</ul>
+							<ul class="z-hot-list">
+								<li><a href="#"><span class="fa fa-file-word-o"></span>
+								人力资源考试题目
+							</a><span class="fa fa-hand-o-up">&nbsp;423</span></li>
+								<li><a href="#"><span class="fa fa-file-text-o"></span>
+								会计师助手</a><span class="fa fa-hand-o-up">&nbsp;324</span></li>
+								<li><a href="#"><span class="fa fa-file-word-o"></span>
+								电工分析师</a><span class="fa fa-hand-o-up">&nbsp;245</span></li>
+								<li><a href="#"><span class="fa fa-file-pdf-o"></span>
+								营养师</a><span class="fa fa-hand-o-up">&nbsp;186</span></li>
+							</ul>
+						</li>
+						<li>
+							<div class="z-hot-main">
+								<span class="fa fa-shopping-cart fa-5x"></span>
+								<div class="z-hot-brif">
+									<h4>类别:生活悠闲</h4>
+									<h5>总数:360篇</h5>
+									<p>下载次数:9609次</p>
+								</div>
+							</div>
+							<ul class="z-comeFrom">
+								<li>
+									<p><span class="fa fa-volume-up fa-lg"></span>吃吃喝喝，该吃吃，该喝喝。</p>
+								</li>
+								<li>
+									<p>收录包括专业出版社<a href="#"><span class="fa fa-viacoin"></span>E周</a>和<a href="#"><span class="fa fa-vk"></span>VK</a>等时尚杂志文档。</p>
+								</li>
+							</ul>
+							<ul class="z-hot-list">
+								<li><a href="#"><span class="fa fa-file-pdf-o"></span>
+								十大旅游胜地
+							</a><span class="fa fa-hand-o-up">&nbsp;423</span></li>
+								<li><a href="#"><span class="fa fa-file-word-o"></span>
+								国际奢侈品牌介绍</a><span class="fa fa-hand-o-up">&nbsp;324</span></li>
+								<li><a href="#"><span class="fa fa-file-excel-o"></span>
+								hot music</a><span class="fa fa-hand-o-up">&nbsp;245</span></li>
+								<li><a href="#"><span class="fa fa-file-word-o"></span>
+								忙里偷闲</a><span class="fa fa-hand-o-up">&nbsp;186</span></li>
+							</ul>
+						</li>
+						<li>
+							<div class="z-hot-main">
+								<span class="fa fa-send-o fa-5x"></span>
+								<div class="z-hot-brif">
+									<h4>类别:其他</h4>
+									<h5>总数:980篇</h5>
+									<p>下载次数:198709次</p>
+								</div>
+							</div>
+							<ul class="z-comeFrom">
+								<li>
+									<p><span class="fa fa-volume-up fa-lg"></span>本系统IT文档内容广泛，是专业IT人员的好助手。</p>
+								</li>
+								<li>
+									<p>收录包括专业出版社<a href="#"><span class="fa fa-pinterest-p"></span>ME杂志</a>等专业文档。</p>
+								</li>
+							</ul>
+							<ul class="z-hot-list">
+								<li><a href="#"><span class="fa fa-file-word-o"></span>
+								电力设计
+							</a><span class="fa fa-hand-o-up">&nbsp;423</span></li>
+								<li><a href="#"><span class="fa fa-file-pdf-o"></span>
+								挖掘机简介</a><span class="fa fa-hand-o-up">&nbsp;324</span></li>
+								<li><a href="#"><span class="fa fa-file-excel-o"></span>
+								农事训练</a><span class="fa fa-hand-o-up">&nbsp;245</span></li>
+								<li><a href="#"><span class="fa fa-file-word-o"></span>
+								奶牛的养法</a><span class="fa fa-hand-o-up">&nbsp;186</span></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div id="z-last-push">
+					<h3>最新上传</h3>
+					<ul id="z-author">
+						<li>
+							<div class="z-time-base">
+								<span class="fa fa-star"></span>
+								<i></i>
+							</div>
+							<div class="z-lastest">
+								<span class="fa fa-sign-in"></span>
+								<span class="z-push-time">10小时前</span>
+								<img src="img/m_756253fec7b50000012d6138956c.jpg" />
+								<span class="z-pusher">
+								<a href="#">LuckyWinty</a>
+						        <p>积分:380</p>
+						    </span>
+								<a href="#">上传:最新操作系统试卷</a>
+							</div>
+						</li>
+						<li>
+							<div class="z-time-base">
+								<span class="fa fa-star"></span>
+								<i></i>
+							</div>
+							<div class="z-lastest">
+								<span class="fa fa-sign-in"></span>
+								<span class="z-push-time">9小时前</span>
+								<img src="img/1282800089rltQFw7P.jpg" />
+								<span class="z-pusher"> <a href="#">陈被单</a>
+						<p>积分:275</p>
+						</span>
+								<a href="#">上传:瘦身秘籍</a>
+							</div>
+						</li>
+						<li>
+							<div class="z-time-base">
+								<span class="fa fa-star"></span>
+								<i></i>
+							</div>
+							<div class="z-lastest">
+								<span class="fa fa-sign-in"></span>
+								<span class="z-push-time">8小时前</span>
+								<img src="img/afternoon2.jpg" />
+								<span class="z-pusher"> <a href="#">Huiying</a>
+						<p>积分:320</p>
+						</span>
+								<a href="#">上传:减肥利器</a>
+							</div>
+						</li>
+						<li>
+							<div class="z-time-base">
+								<span class="fa fa-star"></span>
+								<i></i>
+							</div>
+							<div class="z-lastest">
+								<span class="fa fa-sign-in"></span>
+								<span class="z-push-time">7小时前</span>
+								<img src="img/B.png" />
+								<span class="z-pusher"> <a href="#">Cgraverbber</a>
+						<p>积分:231</p>
+						</span>
+								<a href="#">上传:HTML5实战笔记</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<div class="z-partition"></div>
+		</div>
+		<div id="z-footer">
+			<p>@2015TEXT</p>
+		</div>
+		<script type="text/javascript" src="js/Index.js"></script>
+		<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+		<!--<script src="http://img.mukewang.com/down/53c6484f00013d9300000000.js"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
+		<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.10.0.js"></script>
+		<script type="text/javascript" src="js/jquery.validate-1.13.1.js"></script>
+		<script type="text/jscript" src="js/login.js"></script>
+		<script type="text/javascript" src="js/Index.js"></script>
+	</body>
+
+</html>
